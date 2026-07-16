@@ -15,160 +15,113 @@
 //                    projectMeta.js + projectDetailsData.js)
 //   achievements[] → awards / hackathons (optional)
 //   capabilities[] → high-level specializations
+
 export const PORTFOLIO_DATA = {
     profile: {
-        name: "Firdaus Khotibul Zickrian",
-        role: "AI Engineer & Full-Stack Developer",
-        bio: "Passionate about building intelligent systems that learn, adapt, and solve complex problems. Specializing in Generative AI, Deep Learning, and Modern Web Technologies.",
-        location: "Indonesia",
-        email: "firdauskhotibulzickrian@gmail.com",
+        name: "Rizky Dwi Isniyanto", //[cite: 1]
+        role: "System Information Student & System Analyst", //[cite: 1]
+        bio: "Mahasiswa Semester 6 Sistem Informasi (IPK 4.00) dengan minat kuat pada pengembangan sistem, analisis bisnis, dan tata kelola TI. Berpengalaman mengerjakan proyek berbasis web, mobile, CRM, dan COBIT 5, serta memiliki pengalaman kerja profesional lebih dari 3 tahun dalam operasional, administrasi, dan pelayanan pelanggan.", //[cite: 1]
+        location: "Duren Sawit, Jakarta Timur, Indonesia", //[cite: 1]
+        email: "isniyanto34@gmail.com", //[cite: 1]
         socials: {
-            github: "https://github.com/zickrian",
-            linkedin: "https://linkedin.com/in/firdauskhotibulzickrian/"
+            linkedin: "https://linkedin.com/in/rizkydwiisniyanto", //[cite: 1]
+            github: "" // Kosongkan jika belum ada link GitHub di CV
         }
     },
     experience: [
         {
-            title: "Google Developer Student Club - Universitas Dian Nuswantoro",
-            period: "Nov 2023 - Nov 2025",
+            title: "Barista Part Time - PT. Sari Kopi Indonesia (Starbucks)", //[cite: 1]
+            period: "Maret 2025 - April 2026", //[cite: 1]
             description: [
-                "Actively participating in developer community events, workshops, and collaborative study sessions.",
-                "Contributed to 5+ community discussions across 4 projects, sharing insights on development and analytics."
+                "Memberikan pelayanan pelanggan sesuai standar perusahaan dengan fokus pada kepuasan pelanggan.", //[cite: 1]
+                "Mengelola transaksi dan memastikan akurasi pencatatan penjualan harian.", //[cite: 1]
+                "Menangani permintaan dan keluhan pelanggan secara profesional serta memberikan solusi yang tepat.", //[cite: 1]
+                "Memastikan kepatuhan terhadap standar operasional, kebersihan, dan kualitas produk." //[cite: 1]
             ]
         },
         {
-            title: "Data Analyst - Blockvizo",
-            period: "Jun 2024 - Jul 2025",
+            title: "Store Junior Leader - PT. Indomarco Prismatama", //[cite: 1]
+            period: "Maret 2022 - September 2024", //[cite: 1]
             description: [
-                "Processed 50,000+ game hash history records, examining item drop patterns and building probability-based prediction models that improved forecasting accuracy by 35%.",
-                "Delivered actionable insights through data visualization dashboards, supporting strategic decisions for decentralized projects and reducing analysis time by 40%.",
-                "Specializing in predictive airdrop and winning probability analysis by examining large-scale on-chain data from 10+ Web3 ecosystems"
+                "Dipromosikan dari Store Crew menjadi Store Junior Leader dalam waktu 8 bulan berdasarkan kinerja dan kedisiplinan.", //[cite: 1]
+                "Mengawasi pelaksanaan operasional toko serta memastikan aktivitas harian berjalan sesuai standar perusahaan.", //[cite: 1]
+                "Mengelola administrasi toko, pengendalian persediaan barang, dan penyusunan laporan operasional.", //[cite: 1]
+                "Mengoordinasikan tim untuk mencapai target pelayanan pelanggan dan efektivitas operasional." //[cite: 1]
             ]
         },
         {
-            title: "Lab Assistant - Programming Lab, Universitas Dian Nuswantoro",
-            period: "Aug 2025 - Present",
+            title: "Administrator - PT. SKW", //[cite: 1]
+            period: "Januari 2021 - Oktober 2021", //[cite: 1]
             description: [
-                "Assisted in over 3 academic lab sessions per week for programming and software development courses.",
-                "Mentored around 110 junior students by guiding them through practical exercises and foundational programming concepts."
+                "Mengelola dan memverifikasi data administrasi perusahaan secara akurat.", //[cite: 1]
+                "Melakukan input, pembaruan, dan pengolahan data menggunakan Microsoft Excel.", //[cite: 1]
+                "Menyusun laporan operasional dan dokumentasi perusahaan.", //[cite: 1]
+                "Berkoordinasi dengan berbagai departemen untuk mendukung kebutuhan operasional." //[cite: 1]
             ]
         },
         {
-            title: "Machine Learning Cohort - ASAH (led by Dicoding x Accenture)",
-            period: "Aug 2025 - Jan 2026",
+            title: "Undergraduate Student (S1 Sistem Informasi) - Universitas Nusa Mandiri", //[cite: 1]
+            period: "2023 - Sekarang", //[cite: 1]
             description: [
-                "Served as Project Manager, leading a cross-functional team of 5 machine learning engineers and React developers to build solutions addressing real-world business problems.",
-                "Managing the development of a banking sales prediction portal that improves sales efficiency by prioritizing high-probability leads and reducing time wasted on low-potential prospects.",
-                "Coordinated project timelines, technical discussions, and workflow execution across departments, improving team time efficiency by 70% and ensuring on-time delivery."
-            ]
-        },
-        {
-            title: "AI Engineer Cohort - PIJAK (led by Dicoding x IBM)",
-            period: "Jan 2026 - Present",
-            description: [
-                "Selected as one of the top talents for an intensive AI Engineering bootcamp focusing on Generative AI, Deep Learning, and Ethics.",
-                "Developing advanced AI solutions using Python, applying industry-standard practices from IBM SkillsBuild curriculum.",
-                "Collaborating on a capstone project to solve real-world challenges through innovative Artificial Intelligence implementation."
+                "Mempertahankan IPK 4.00 hingga semester 6.", //[cite: 1]
+                "Mempelajari analisis dan perancangan sistem, pengelolaan basis data, serta pengembangan aplikasi berbasis web." //[cite: 1]
             ]
         }
     ],
     techStack: [
-        { name: "Python", category: "Language" },
-        { name: "TensorFlow", category: "Deep Learning" },
-        { name: "PyTorch", category: "Deep Learning" },
-        { name: "React", category: "Frontend" },
-        { name: "Next.js", category: "Frontend" },
-        { name: "Tailwind CSS", category: "Frontend" },
-        { name: "PostgreSQL", category: "Database" },
-        { name: "Supabase", category: "Backend" },
-        { name: "Docker", category: "DevOps" },
-        { name: "MLOps", category: "Machine Learning Operations" },
-        { name: "Scikit-Learn", category: "Machine Learning" },
-        { name: "OpenCV", category: "Computer Vision" },
-        { name: "FastAPI", category: "Backend" },
-        { name: "Streamlit", category: "ML Deployment" },
-        { name: "Pandas", category: "Data Analysis" },
-        { name: "Matplotlib", category: "Visualization" },
-        { name: "Seaborn", category: "Visualization" },
-        { name: "Keras", category: "Deep Learning" },
-        { name: "Numpy", category: "Data Science" },
-        { name: "Google Gemini", category: "LLM / GenAI" },
-        { name: "RAG", category: "AI Architecture" },
-        { name: "ExpressJS", category: "Backend" },
-        { name: "Microsoft Azure", category: "Cloud" }
+        { name: "PHP", category: "Language" }, //[cite: 1]
+        { name: "Dart", category: "Language" }, //[cite: 1]
+        { name: "HTML/CSS", category: "Frontend" }, //[cite: 1]
+        { name: "JavaScript", category: "Frontend" }, //[cite: 1]
+        { name: "Flutter", category: "Mobile" }, //[cite: 1]
+        { name: "CodeIgniter 3", category: "Framework" }, //[cite: 1]
+        { name: "MySQL", category: "Database" }, //[cite: 1]
+        { name: "SQL", category: "Database" }, //[cite: 1]
+        { name: "REST API", category: "Backend" }, //[cite: 1]
+        { name: "UML", category: "System Analysis" }, //[cite: 1]
+        { name: "COBIT 5", category: "IT Governance" }, //[cite: 1]
+        { name: "CRM", category: "Business Analysis" }, //[cite: 1]
+        { name: "Microsoft Excel", category: "Tools" }, //[cite: 1]
+        { name: "Microsoft Office", category: "Tools" } //[cite: 1]
     ],
     projects: [
         {
-            slug: "diabetes-classification",
-            title: "Diabetes Classification",
-            category: "AI / Machine Learning",
-            description: "Machine Learning model to classify diabetes risk based on medical data."
+            slug: "gps-attendance-app", 
+            title: "Aplikasi Absensi Karyawan Berbasis GPS", //[cite: 1]
+            category: "Mobile Programming", //[cite: 1]
+            description: "Mengembangkan aplikasi Android dengan Flutter yang mengimplementasikan fitur GPS Location untuk memvalidasi absensi secara real-time dan terintegrasi REST API." //[cite: 1]
         },
         {
-            slug: "leadsup",
-            title: "LeadsUp",
-            category: "AI-Powered Lead Scoring",
-            description: "AI system for scoring sales leads to prioritize high-value prospects."
+            slug: "bimba-crm",
+            title: "Penerapan CRM BIMBA AIUEO Kemayoran", //[cite: 1]
+            category: "System Analysis & Design", //[cite: 1]
+            description: "Menganalisis proses bisnis penerimaan siswa baru dan merancang strategi CRM dengan UML untuk meningkatkan efektivitas pemasaran." //[cite: 1]
         },
         {
-            slug: "polsekrembang",
-            title: "Polsek Rembang Virtual Assistant",
-            category: "RAG Chatbot / AI Assistant",
-            description: "RAG-based chatbot to assist with police station inquiries and services."
-        },
-        {
-            slug: "floodsegmen",
-            title: "Flood Segmentation Analyzer",
-            category: "Computer Vision",
-            description: "Computer Vision system for analyzing flood patterns and segmentation from satellite/drone imagery."
-        },
-        {
-            slug: "qmeal",
-            title: "QMeal E-Kantin",
-            category: "Multi-Vendor Ordering Platform",
-            description: "Digital canteen ordering system supporting multiple vendors and efficient queue management."
-        },
-        {
-            slug: "lostandfound",
-            title: "SITEMU Lost & Found Portal",
-            category: "Web Application",
-            description: "Community platform for reporting and finding lost items."
-        },
-        {
-            slug: "imageclas",
-            title: "Vegetable Image Classification",
-            category: "Computer Vision",
-            description: "Deep Learning model for classifying different types of vegetables from images."
-        },
-        {
-            slug: "financial-assistant-bot",
-            title: "Financial Assistant Bot",
-            category: "AI / Fintech",
-            description: "AI bot for personal finance management and advice."
+            slug: "starbucks-it-governance",
+            title: "Analisis Tata Kelola TI SDM Starbucks", //[cite: 1]
+            category: "IT Governance", //[cite: 1]
+            description: "Mengevaluasi sistem manajemen SDM menggunakan framework COBIT 5, mencakup penilaian tingkat kapabilitas dan gap analysis." //[cite: 1]
         }
     ],
     achievements: [
         {
-            title: "National Finalist - Base Indonesia Hackathon 2025",
-            project: "Base Realms",
-            description: "Built an onchain 16-bit RPG battle game on Base chain with QRIS payment integration, ERC-721/ERC-1155 NFTs, and seasonal reward pools. Onboards non-crypto users through familiar payment methods.",
-            team: "Terra Bit (Firdaus Khotibul Zickrian & Gagah Athallah Fatha)",
-            track: "Base Track",
-            techStack: ["Solidity", "Next.js", "TypeScript", "JavaScript", "CSS"],
-            links: {
-                devfolio: "https://devfolio.co/projects/base-realms-b63a",
-                github: "https://github.com/zickrian/Base-Realms",
-                live: "https://baserealms.app/"
-            }
+            title: "Promoted to Store Junior Leader", //[cite: 1]
+            project: "PT. Indomarco Prismatama", //[cite: 1]
+            description: "Dipromosikan dari Store Crew dalam waktu 8 bulan berkat kinerja, kedisiplinan, dan kemampuan manajerial operasional toko yang baik.", //[cite: 1]
+            team: "Individual", 
+            track: "Career Progression",
+            techStack: ["Leadership", "Time Management", "Problem Solving", "Customer Service"], //[cite: 1]
+            links: {} 
         }
     ],
     capabilities: [
-        "Machine Learning",
-        "Deep Learning",
-        "Computer Vision",
-        "Natural Language Processing (NLP)",
-        "Machine Learning Operations (MLOps)",
-        "Data Analysis",
-        "Web Development"
+        "System Analysis & Design (UML)", //[cite: 1]
+        "IT Governance (COBIT 5)", //[cite: 1]
+        "Web & Mobile Application Development", //[cite: 1]
+        "Database Management (MySQL)", //[cite: 1]
+        "Business Process & CRM Analysis", //[cite: 1]
+        "Data Administration & Processing", //[cite: 1]
+        "Leadership & Team Collaboration" //[cite: 1]
     ]
 };

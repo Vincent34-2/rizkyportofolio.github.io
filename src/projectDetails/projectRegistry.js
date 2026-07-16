@@ -4,6 +4,10 @@ import { PROJECT_META_BY_SLUG } from "../data/projectMeta";
 const PROJECT_DETAIL_COMPONENTS = {
   "diabetes-classification": lazy(() => import("./DiabetesClassificationDetail")),
   leadsup: lazy(() => import("./LeadsUpDetail")),
+  "tableau": lazy(() => import("./TableauDetail")),
+  "gps-attendance-app": lazy(() => import("./GpsAttendanceAppDetail")),
+  "eperpus": lazy(() => import("./EperpusDetail")),
+  "starbucks-it-governance": lazy(() => import("./StarbucksItGovernanceDetail")),
   polsekrembang: lazy(() => import("./PolsekRembangDetail")),
   floodsegmen: lazy(() => import("./FloodSegmenDetail")),
   qmeal: lazy(() => import("./QMealDetail")),

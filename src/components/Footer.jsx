@@ -124,9 +124,9 @@ const Footer = memo(function Footer() {
               <span className="font-mono text-[10px] text-white/30 uppercase tracking-[0.18em] md:tracking-[0.24em] mb-4 border-l-2 border-lime-400 pl-3">Networks</span>
 
               {[
-                { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=firdauskhotibulzickrian@gmail.com', icon: Mail },
-                { label: 'GitHub', href: 'https://github.com/zickrian', icon: Github },
-                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/firdauskhotibulzickrian/', icon: Linkedin },
+                { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=isniyanto34@gmail.com', icon: Mail },
+                { label: 'GitHub', href: 'https://github.com/Vincent34-2', icon: Github },
+                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rizkii7/', icon: Linkedin },
               ].map((link) => (
                 <a
                   key={link.label}
@@ -145,7 +145,7 @@ const Footer = memo(function Footer() {
 
               {/* Discord Profile Link */}
               <a
-                href="https://discord.com/users/zickrian"
+                href="https://discord.com/channels/@vincenttt_21847"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between border border-white/10 bg-[#111111] hover:bg-lime-400 hover:border-lime-400 transition-colors duration-300 p-3 mt-1"
@@ -158,7 +158,8 @@ const Footer = memo(function Footer() {
                       Discord
                     </span>
                     <span className="font-mono text-[9px] lowercase leading-none transition-colors text-white/40 group-hover:text-black/60">
-                      @zickrian
+                      @vincenttt_21847
+
                     </span>
                   </div>
                 </div>
@@ -183,7 +184,7 @@ const Footer = memo(function Footer() {
           </div>
 
           <div className="font-mono text-[10px] md:text-xs text-white/40 uppercase tracking-[0.14em] md:tracking-[0.2em] text-center md:text-right">
-            &copy; {new Date().getFullYear()} ZICKRIAN. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} RIZKY DWI ISNIYANTO. ALL RIGHTS RESERVED.
           </div>
         </div>
 

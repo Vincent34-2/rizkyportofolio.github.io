@@ -1,65 +1,49 @@
 import { useMemo, useState } from 'react';
 import { Gsap, GsapPresence } from '../utils/gsapAnimate';
 // Note: scroll-triggered entrance animations removed from this section intentionally
-import { Plus, Calendar, Building2, Sparkles, ArrowUpRight } from 'lucide-react';
+import { Plus, Calendar, Building2, Sparkles, ArrowUpRight, Camera } from 'lucide-react';
 
 const experiences = [
   {
-    company: 'GDSC Udinus',
-    role: 'Developer Community',
-    period: 'Nov 2023 - Nov 2025',
-    impact: 'Contributed to 5+ technical discussions across 4 collaborative projects.',
-    stack: ['Community', 'Workshops', 'Collaboration'],
+    company: 'PT. Sari Kopi Indonesia (Starbucks)',
+    role: 'Barista Part Time',
+    period: 'Maret 2025 - April 2026',
+    impact: 'Memberikan pelayanan pelanggan dan menjaga kelancaran operasional gerai.',
+    stack: ['Customer Service', 'Point of Sales', 'Teamwork', 'F&B Operations'],
     description: [
-      'Actively participated in workshops, technical events, and collaborative learning sessions.',
-      'Contributed insights around development and analytics in community-driven projects.',
+      'Memberikan pelayanan pelanggan sesuai standar perusahaan dengan fokus pada kepuasan pelanggan.',
+      'Mengelola transaksi dan memastikan akurasi pencatatan penjualan harian.',
+      'Bekerja sama dengan tim untuk menjaga kelancaran operasional gerai dalam lingkungan kerja yang cepat dan dinamis.',
+      'Menangani permintaan dan keluhan pelanggan secara profesional serta memberikan solusi yang tepat.',
+      'Memastikan kepatuhan terhadap standar operasional, kebersihan, dan kualitas produk.',
     ],
   },
   {
-    company: 'Blockvizo',
-    role: 'Data Analyst',
-    period: 'Jun 2024 - Jul 2025',
-    impact: 'Improved forecasting accuracy by 35% and cut analysis time by 40%.',
-    stack: ['Data Analysis', 'Dashboards', 'Web3 Analytics', 'Predictive Modeling'],
+    company: 'PT. Indomarco Prismatama',
+    role: 'Store Junior Leader',
+    period: 'Maret 2022 - September 2024',
+    impact: 'Dipromosikan dalam 8 bulan; mengelola operasional toko, administrasi, dan koordinasi tim.',
+    stack: ['Store Management', 'Inventory Control', 'Leadership', 'Reporting'],
     description: [
-      'Processed 50,000+ game hash history records to model item-drop probability behavior.',
-      'Built actionable dashboards for decentralized projects, enabling faster and more confident decisions.',
-      'Specialized in predictive airdrop and winning probability analysis across 10+ Web3 ecosystems.',
+      'Dipromosikan dari Store Crew menjadi Store Junior Leader dalam waktu 8 bulan berdasarkan kinerja, kedisiplinan, dan kemampuan dalam mendukung operasional toko.',
+      'Mengawasi pelaksanaan operasional toko serta memastikan aktivitas harian berjalan sesuai standar perusahaan.',
+      'Mengelola administrasi toko, pengendalian persediaan barang, dan penyusunan laporan operasional.',
+      'Mengoordinasikan tim untuk mencapai target pelayanan pelanggan dan efektivitas operasional.',
+      'Menangani permasalahan operasional dan memberikan solusi untuk menjaga kelancaran aktivitas toko.',
     ],
   },
   {
-    company: 'ASAH (led by Dicoding x Accenture)',
-    role: 'Machine Learning Cohort',
-    period: 'Aug 2025 - Jan 2026',
-    impact: 'Served as project manager during the capstone phase and improved team execution by 70%.',
-    stack: ['Project Leadership', 'ML Product', 'React', 'Stakeholder Sync'],
+    company: 'PT. SKW',
+    role: 'Administrator',
+    period: 'Januari 2021 - Oktober 2021',
+    impact: 'Mengelola data administrasi, validasi dokumen, dan laporan operasional perusahaan.',
+    stack: ['Data Entry', 'Microsoft Excel', 'Administration', 'Data Validation'],
     description: [
-      'Acted as project manager during capstone, leading a cross-functional team of 5 machine learning engineers and React developers.',
-      'Managed the development of a banking sales prediction portal to prioritize high-probability leads and reduce low-value outreach.',
-      'Coordinated timelines and technical workflows across functions to improve delivery speed and reliability.',
-    ],
-  },
-  {
-    company: 'Programming Lab',
-    role: 'Lab Assistant',
-    period: 'Aug 2025 - Present',
-    impact: 'Mentored 110+ junior students through practical engineering sessions.',
-    stack: ['Teaching', 'Mentorship', 'Software Fundamentals'],
-    description: [
-      'Assisted in 3+ weekly academic lab sessions for programming and software engineering courses.',
-      'Mentored around 110 junior students in problem solving, practical exercises, and core programming concepts.',
-    ],
-  },
-  {
-    company: 'PIJAK (led by Dicoding x IBM)',
-    role: 'AI Engineer Cohort',
-    period: 'Jan 2026 - Present',
-    impact: 'Selected participant in the PIJAK AI Engineer cohort.',
-    stack: ['Python', 'Generative AI', 'Deep Learning', 'AI Ethics'],
-    description: [
-      'Joined an intensive AI Engineer cohort focused on Generative AI, Deep Learning, and AI Ethics.',
-      'Developing advanced AI solutions with Python and industry-standard practices from the IBM SkillsBuild curriculum.',
-      'Building capstone-ready systems for real-world AI implementation challenges.',
+      'Mengelola dan memverifikasi data administrasi perusahaan secara akurat.',
+      'Melakukan input, pembaruan, dan pengolahan data menggunakan Microsoft Excel.',
+      'Menyusun laporan operasional dan dokumentasi perusahaan.',
+      'Memastikan kelengkapan serta validitas data dan dokumen.',
+      'Berkoordinasi dengan berbagai departemen untuk mendukung kebutuhan operasional.',
     ],
   },
 ];
@@ -70,7 +54,7 @@ function getStartYear(period) {
 }
 
 const ExperienceItem = ({ experience, isExpanded, onToggle, index }) => {
-  const isCurrent = /present/i.test(experience.period);
+  const isCurrent = /sekarang/i.test(experience.period) || /present/i.test(experience.period);
 
   return (
     <article className="relative min-w-0">
@@ -168,7 +152,7 @@ const ProfessionalExperience = () => {
 
   const statCards = useMemo(() => {
     const roles = experiences.length;
-    const activeNow = experiences.filter((item) => /present/i.test(item.period)).length;
+    const activeNow = experiences.filter((item) => /sekarang/i.test(item.period) || /present/i.test(item.period)).length;
     const organizations = new Set(experiences.map((item) => item.company)).size;
     const startYears = experiences.map((item) => getStartYear(item.period)).filter(Boolean);
     const firstYear = startYears.length ? Math.min(...startYears) : new Date().getFullYear();
@@ -197,6 +181,8 @@ const ProfessionalExperience = () => {
         </div>
 
         <div className="grid lg:grid-cols-[360px_1fr] gap-10 lg:gap-14 items-start min-w-0">
+          
+          {/* ════ LEFT COLUMN / ASIDE ════ */}
           <aside className="lg:sticky lg:top-24 min-w-0">
             <h2 className="text-[34px] sm:text-[46px] lg:text-[56px] font-black uppercase tracking-[-0.03em] leading-[0.95] text-black">
               Professional
@@ -205,7 +191,7 @@ const ProfessionalExperience = () => {
             </h2>
 
             <p className="mt-5 text-[14px] md:text-[15px] font-light leading-[1.8] text-black/60 max-w-[320px]">
-              Selected roles across AI cohorts, data analytics, and mentoring. Each step adds stronger delivery habits, leadership, and product clarity.
+              Pengalaman kerja lebih dari 3 tahun dalam operasional, administrasi, dan pelayanan pelanggan. Setiap peran telah membentuk kemampuan komunikasi, koordinasi tim, problem solving, dan adaptasi yang baik dalam lingkungan kerja yang dinamis.
             </p>
 
             <div className="mt-7 grid grid-cols-2 gap-2.5">
@@ -221,8 +207,62 @@ const ProfessionalExperience = () => {
               <Sparkles className="w-3.5 h-3.5" />
               <p className="font-mono text-[9px] uppercase tracking-[0.16em]">Career timeline - expand each role</p>
             </div>
-          </aside>
 
+            {/* ── ABSTRACT PHOTO GALLERY (Dipindah ke sini, bawah teks) ── */}
+            <div className="mt-12 pt-8 border-t border-black/[0.06] relative w-full mb-12 lg:mb-0">
+              
+              {/* Latar Belakang Glow */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-lime-400/[0.06] rounded-full blur-[60px] pointer-events-none -z-10" />
+
+              <div className="flex items-center gap-3 mb-8">
+                <Camera className="w-4 h-4 text-black/30" />
+                <span className="font-mono text-[9px] md:text-[10.5px] uppercase tracking-[0.2em] font-bold text-black/40">
+                  Behind The Scenes : Starbucks
+                </span>
+              </div>
+
+              {/* Kontainer Kolase - Menggunakan aspect ratio vertikal untuk menampung absolute */}
+              <div className="relative w-full pb-[125%] max-w-[360px] mx-auto md:mx-0">
+                
+                {/* Gambar 1 (Kiri Atas) */}
+                <div className="absolute top-0 left-0 w-[65%] aspect-[3/4] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-[0_8px_24px_rgb(0,0,0,0.06)] z-10 group bg-black/5">
+                  <img 
+                    src="/sb1.jpeg" 
+                    alt="Starbucks BTS 1" 
+                    className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" 
+                    loading="lazy"
+                  />
+                </div>
+                {/* Solatip Dekoratif */}
+                <div className="absolute -top-2 left-[15%] w-12 h-4 bg-white/70 backdrop-blur-md border border-black/5 shadow-sm rotate-[-4deg] z-20 pointer-events-none" />
+
+                {/* Gambar 2 (Kanan Tengah - Melebar) */}
+                <div className="absolute top-[25%] right-0 w-[72%] aspect-[16/11] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-[0_12px_32px_rgb(0,0,0,0.08)] z-20 group bg-black/5">
+                  <img 
+                    src="/sb2.jpeg" 
+                    alt="Starbucks BTS 2" 
+                    className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Gambar 3 (Kiri Bawah) */}
+                <div className="absolute bottom-0 left-[8%] w-[55%] aspect-[4/5] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-[0_4px_20px_rgb(0,0,0,0.05)] z-30 group bg-black/5">
+                  <img 
+                    src="/sb3.jpeg" 
+                    alt="Starbucks BTS 3" 
+                    className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" 
+                    loading="lazy"
+                  />
+                </div>
+                
+              </div>
+            </div>
+            {/* ── END ABSTRACT PHOTO GALLERY ── */}
+
+          </aside>
+          
+          {/* ════ RIGHT COLUMN / TIMELINE ITEMS ════ */}
           <div className="relative space-y-3 min-w-0 overflow-x-clip">
             {experiences.map((experience, index) => (
               <ExperienceItem
@@ -241,6 +281,7 @@ const ProfessionalExperience = () => {
               </span>
             </div>
           </div>
+
         </div>
       </div>
     </section>

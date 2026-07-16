@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: 'Logs', sectionId: 'project-section' },
   { label: 'Work', sectionId: 'experience-section' },
   { label: 'Stack', sectionId: 'tech-stack-section' },
-  { label: 'Stats', sectionId: 'github-stats-section' },
+  
   { label: 'Skills', sectionId: 'capabilities-section' },
 ];
 
@@ -122,7 +122,7 @@ const Navbar = memo(function Navbar() {
         >
 
           <span className={`text-sm font-black tracking-[0.16em] md:tracking-[0.2em] uppercase transition-colors duration-300 ${isOnDarkSection ? 'text-white' : 'text-black'}`}>
-            Zickrian
+            Rizky
           </span>
         </div>
       </Magnetic>

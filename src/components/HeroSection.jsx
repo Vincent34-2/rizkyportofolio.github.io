@@ -232,7 +232,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             transition={{ duration: 0.75, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88]"
           >
-            FIRDAUS
+            RIZKY
           </Gsap.h1>
 
           <Gsap.h1
@@ -241,7 +241,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] mt-2 sm:mt-0 font-outline-fallback"
           >
-            ZICKRIAN
+            DWI ISNIYANTO
           </Gsap.h1>
 
           {/* Right Decoration */}
@@ -257,10 +257,10 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           className="flex flex-col items-center gap-2 mt-0"
         >
           <h2 className="text-[clamp(1.35rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-2">
-            Architecting <span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">Intelligent</span> Paradigms<span className="text-lime-500 font-extrabold -ml-1">.</span>
+            INFORMATION<span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">SYSTEMS</span> STUDENT<span className="text-lime-500 font-extrabold -ml-1">.</span>
           </h2>
           <p className="font-sans text-base text-black/60 max-w-xl leading-7 mt-2 px-4">
-            AI Engineer & Full-Stack Developer specializing in high-performance, scalable systems.
+          System Analyst & Full-Stack Application Developer focused on system development, business analysis, and data administration.
           </p>
         </Gsap.div>
 
@@ -278,7 +278,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             View Projects <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1Eehll90e61H_kvc5Wp2bpEWPkdpM279_/view?usp=drive_link"
             download
             className="group flex items-center gap-2 bg-transparent text-black border-2 border-black px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-black hover:text-lime-400 transition-all duration-300"
           >

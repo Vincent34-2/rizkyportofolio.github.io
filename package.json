@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "author": "Firdaus Zickrian",
-  "homepage": "https://github.com/zickrian/Portfolio-dev#readme",
+  "homepage": "https://Vincent34-2.github.io/rizkyportofolio.github.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/zickrian/Portfolio-dev.git"
@@ -44,6 +44,8 @@
     "preview": "vite preview --host 0.0.0.0",
     "check": "npm run build && npm audit --omit=dev",
     "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "format:check": "prettier --check ."
   },
   "browserslist": {
@@ -61,6 +63,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.4.23",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.19",

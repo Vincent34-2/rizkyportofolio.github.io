@@ -4,7 +4,6 @@ import Preloader from '../components/Preloader';
 import Cursor from '../components/Cursor';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import ChatLauncher from '../components/ChatLauncher';
 import useLenis from '../hooks/useLenis';
 import useScrollToGallery from '../hooks/useScrollToGallery';
 
@@ -13,7 +12,6 @@ const AboutSection = lazy(() => import('../components/AboutSection'));
 const Footer = lazy(() => import('../components/Footer'));
 
 const ProjectGallery = lazy(() => import('../components/ProjectGallery'));
-const GitHubStats = lazy(() => import('../components/GitHubStats'));
 const TechStack = lazy(() => import('../components/TechStack'));
 const NoiseOverlay = lazy(() => import('../components/NoiseOverlay'));
 const ProfessionalExperience = lazy(() => import('../components/ProfessionalExperience'));
@@ -78,9 +76,6 @@ export default function Home() {
       )}
 
       {enableNoiseOverlay && <Suspense fallback={null}><NoiseOverlay /></Suspense>}
-      <ChatLauncher />
-
-
 
       <Cursor />
       <Navbar />
@@ -96,7 +91,6 @@ export default function Home() {
 
       <Suspense fallback={null}><ProfessionalExperience /></Suspense>
       <Suspense fallback={null}><TechStack /></Suspense>
-      <Suspense fallback={null}><GitHubStats /></Suspense>
       <Suspense fallback={null}><TechnicalCapabilities /></Suspense>
       <Suspense fallback={null}><Footer /></Suspense>
     </div>

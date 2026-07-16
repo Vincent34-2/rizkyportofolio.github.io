@@ -289,8 +289,8 @@ export default function ProjectGallery({ onOpenProject }) {
           </div>
 
           <h2 className="text-5xl font-black text-white uppercase leading-[0.92] tracking-tight">
-            Past<br />
-            <span className="text-lime-400">Explorations</span>
+            Project<br />
+            <span className="text-lime-400">Academic</span>
           </h2>
           <p className="mt-4 text-neutral-400 text-sm leading-6 max-w-sm">
             Transforming ideas into real-world applications.
@@ -400,7 +400,7 @@ export default function ProjectGallery({ onOpenProject }) {
       >
         <div className="w-2 h-2 bg-lime-400 rounded-full shadow-[0_0_8px_rgba(163,230,53,0.8)]" />
         <span className="font-mono text-xs font-bold uppercase tracking-[0.26em] text-white/40">
-          02. Past_Explorations
+          02. Project_academic
         </span>
         <div className="flex-1 h-[1px] bg-white/5" />
       </Gsap.div>
@@ -419,8 +419,8 @@ export default function ProjectGallery({ onOpenProject }) {
             className="flex flex-col justify-center shrink-0 h-[70vh] w-[40vw]"
           >
             <h2 className="text-6xl lg:text-8xl font-black text-white uppercase leading-[0.92]">
-              Past<br />
-              <span className="text-lime-400">Explorations</span>
+              Project<br />
+              <span className="text-lime-400">Academic</span>
             </h2>
             <p className="mt-8 text-neutral-300 max-w-md text-lg leading-7">
               Transforming ideas into real-world applications.
