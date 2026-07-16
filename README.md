@@ -233,3 +233,5 @@ on direct load.
 ## License
 
 Licensed under the [MIT License](LICENSE). Copyright (c) 2026 Firdaus Zickrian.
+#   r i z k y p o r t o f o l i o . g i t h u b . i o  
+ 
