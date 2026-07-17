@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Gsap, GsapPresence } from '../utils/gsapAnimate';
-// Note: scroll-triggered entrance animations removed from this section intentionally
 import { Plus, Calendar, Building2, Sparkles, ArrowUpRight, Camera } from 'lucide-react';
 
 const experiences = [
@@ -208,7 +207,7 @@ const ProfessionalExperience = () => {
               <p className="font-mono text-[9px] uppercase tracking-[0.16em]">Career timeline - expand each role</p>
             </div>
 
-            {/* ── ABSTRACT PHOTO GALLERY (7 PHOTOS) ── */}
+            {/* ── ABSTRACT PHOTO GALLERY (AESTHETIC POLAROID FRAMES) ── */}
             <div className="mt-12 pt-8 border-t border-black/[0.06] relative w-full mb-12 lg:mb-0">
               
               {/* Latar Belakang Glow */}
@@ -221,39 +220,61 @@ const ProfessionalExperience = () => {
                 </span>
               </div>
 
-              {/* Kontainer Kolase - Diperpanjang menjadi pb-[150%] agar muat 7 foto */}
-              <div className="relative w-full pb-[150%] max-w-[360px] mx-auto md:mx-0">
+              {/* Kontainer Kolase - Diubah menjadi pb-[105%] agar lebih ringkas ke bawah dan melebar ke kanan */}
+              <div className="relative w-full pb-[105%] max-w-[420px] mx-auto md:mx-0">
                 
-                {/* Gambar 1 */}
-                <div className="absolute top-0 left-[2%] w-[42%] aspect-[3/4] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-md z-10 group bg-black/5 rotate-[-5deg] hover:z-[60] transition-all duration-500">
-                  <img src="/sb1.jpeg" alt="Starbucks BTS 1" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
-                  <div className="absolute -top-1 left-[25%] w-10 h-3 bg-white/70 backdrop-blur-md rotate-[8deg] z-20 pointer-events-none" />
+                {/* Gambar 1 (Kiri Atas) */}
+                <div className="absolute top-0 left-0 w-[44%] rotate-[-4deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[3/4] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/sb1.jpeg" alt="Starbucks BTS 1" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Gambar 2 */}
-                <div className="absolute top-[6%] right-[3%] w-[48%] aspect-[4/3] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-lg z-20 group bg-black/5 rotate-[4deg] hover:z-[60] transition-all duration-500">
-                  <img src="/sb2.jpeg" alt="Starbucks BTS 2" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
+                {/* Gambar 2 (Kanan Atas) */}
+                <div className="absolute top-[5%] right-0 w-[48%] rotate-[5deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[4/3] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/sb2.jpeg" alt="Starbucks BTS 2" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Gambar 3 */}
-                <div className="absolute top-[26%] left-0 w-[40%] aspect-[1/1] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-sm z-30 group bg-black/5 rotate-[-3deg] hover:z-[60] transition-all duration-500">
-                  <img src="/sb3.jpeg" alt="Starbucks BTS 3" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
+                {/* Gambar 3 (Kiri Tengah) */}
+                <div className="absolute top-[32%] left-[4%] w-[42%] rotate-[3deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[1/1] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/sb3.jpeg" alt="Starbucks BTS 3" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Gambar 4 */}
-                <div className="absolute top-[32%] right-0 w-[45%] aspect-[3/4] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-md z-10 group bg-black/5 rotate-[6deg] hover:z-[60] transition-all duration-500">
-                  <img src="/sb4.png" alt="Starbucks BTS 4" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
-                  <div className="absolute -top-2 right-[25%] w-12 h-3.5 bg-white/70 backdrop-blur-md rotate-[-6deg] z-20 pointer-events-none" />
+                {/* Gambar 4 (Kanan Tengah) */}
+                <div className="absolute top-[38%] right-[2%] w-[46%] rotate-[-5deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[4/5] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/sb4.png" alt="Starbucks BTS 4" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Gambar 5 (Center/Highlight) */}
-                <div className="absolute top-[48%] left-[10%] w-[55%] aspect-[16/11] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-xl z-40 group bg-black/5 rotate-[-2deg] hover:z-[60] transition-all duration-500">
-                  <img src="/cp1.png" alt="Starbucks BTS 5" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
+                {/* Gambar 5 (Kiri Bawah) */}
+                <div className="absolute bottom-0 left-0 w-[48%] rotate-[-3deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[16/11] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/cp1.png" alt="Starbucks BTS 5" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Gambar 6 */}
-                <div className="absolute bottom-[12%] right-[4%] w-[42%] aspect-[4/5] rounded-[4px] overflow-hidden border border-black/[0.05] shadow-md z-30 group bg-black/5 rotate-[5deg] hover:z-[60] transition-all duration-500">
-                  <img src="/cp2.png" alt="Starbucks BTS 6" className="w-full h-full object-cover grayscale-[25%] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]" loading="lazy" />
+                {/* Gambar 6 (Kanan Bawah) */}
+                <div className="absolute bottom-[4%] right-[5%] w-[42%] rotate-[6deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+                  <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
+                    <div className="aspect-[3/4] overflow-hidden bg-black/5 rounded-[1px]">
+                      <img src="/cp2.png" alt="Starbucks BTS 6" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
                 
               </div>
