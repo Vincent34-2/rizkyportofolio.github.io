@@ -222,15 +222,32 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
 
         {/* 2. Massive Clear Typography */}
         <div className="flex flex-col items-center justify-center relative w-full mb-4 md:mb-5">
-          {/* Left Decoration */}
-          <OrbitingDecoration icon={Code2} delay={0.15} className="left-0 sm:left-2 lg:left-16 top-2" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
-          <OrbitingDecoration icon={Terminal} delay={0.45} className="left-6 sm:left-12 lg:left-28 bottom-8 hidden sm:flex" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
+          
+          {/* FOTO RIZKY (Absolute, di belakang teks dengan z-0) */}
+          <Gsap.div
+            initial={false}
+            animate={isRevealed ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute left-0 sm:left-[10%] lg:left-[15%] bottom-[-10%] sm:bottom-[-20%] w-[160px] sm:w-[220px] md:w-[280px] z-0 pointer-events-none"
+          >
+            {/* Pastikan nama filenya sesuai dengan yang ada di folder public kamu */}
+            <img 
+              src="/rizky.png" 
+              alt="Rizky Dwi Isniyanto" 
+              className="w-full h-auto drop-shadow-xl"
+            />
+          </Gsap.div>
 
+          {/* Left Decoration */}
+          <OrbitingDecoration icon={Code2} delay={0.15} className="left-0 sm:left-2 lg:left-16 top-2 z-20" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
+          <OrbitingDecoration icon={Terminal} delay={0.45} className="left-6 sm:left-12 lg:left-28 bottom-8 hidden sm:flex z-20" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
+
+          {/* TEKS DIBERI RELATIVE DAN Z-10 AGAR BERADA DI DEPAN FOTO */}
           <Gsap.h1
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88]"
+            className="relative z-10 text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88]"
           >
             RIZKY
           </Gsap.h1>
@@ -239,14 +256,14 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] mt-2 sm:mt-0 font-outline-fallback"
+            className="relative z-10 text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] mt-2 sm:mt-0 font-outline-fallback"
           >
             DWI ISNIYANTO
           </Gsap.h1>
 
           {/* Right Decoration */}
-          <OrbitingDecoration icon={Database} delay={0.28} className="right-0 sm:right-2 lg:right-16 top-10" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
-          <OrbitingDecoration icon={Cpu} delay={0.58} className="right-6 sm:right-12 lg:right-28 -bottom-2 hidden sm:flex" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
+          <OrbitingDecoration icon={Database} delay={0.28} className="right-0 sm:right-2 lg:right-16 top-10 z-20" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
+          <OrbitingDecoration icon={Cpu} delay={0.58} className="right-6 sm:right-12 lg:right-28 -bottom-2 hidden sm:flex z-20" isRevealed={isRevealed} enableAmbientMotion={enableAmbientMotion} />
         </div>
 
         {/* 3. Clean Slogan with Green Accent */}
@@ -254,7 +271,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           initial={false}
           animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.38, duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col items-center gap-2 mt-0"
+          className="flex flex-col items-center gap-2 mt-0 relative z-20"
         >
           <h2 className="text-[clamp(1.35rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-2">
             INFORMATION<span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">SYSTEMS</span> STUDENT<span className="text-lime-500 font-extrabold -ml-1">.</span>
@@ -269,7 +286,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           initial={false}
           animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
           transition={{ delay: 0.5, duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-wrap items-center justify-center gap-4 mt-5"
+          className="flex flex-wrap items-center justify-center gap-4 mt-5 relative z-20"
         >
           <button
             onClick={() => document.getElementById('project-section')?.scrollIntoView({ behavior: 'smooth' })}
@@ -285,8 +302,6 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             Download CV <Download size={16} className="group-hover:translate-y-0.5 transition-transform" />
           </a>
         </Gsap.div>
-
-
 
         </Gsap.div>
 
