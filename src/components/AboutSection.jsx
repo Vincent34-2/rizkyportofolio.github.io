@@ -209,7 +209,7 @@ const AboutSection = memo(function AboutSection() {
                 <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/32 mb-1.5">Location</p>
                 <div className="flex items-center gap-1.5">
                   <MapPin size={11} className="text-black/38 shrink-0" />
-                  <span className="text-[13px] font-bold text-black">Duren Sawit, JKT</span>
+                  <span className="text-[13px] font-bold text-black">Jakarta</span>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@ const AboutSection = memo(function AboutSection() {
             >
 
               <span className="font-mono text-[10px] md:text-[10.5px] uppercase tracking-[0.2em] text-black/35">
-                Business Analysis · Data Analyst · Audit Sistem Informasi · Web & Mobile Development
+                Business Analysis · Data Analysis · Audit Sistem Informasi · Web & Mobile Development
               </span>
             </Gsap.div>
 
@@ -278,7 +278,7 @@ const AboutSection = memo(function AboutSection() {
               className="space-y-4 text-[15px] md:text-[15.5px] font-light text-black/60 leading-[1.88] max-w-[580px]"
             >
               <p>
-                I'm <strong className="text-black font-semibold">Rizky Dwi Isniyanto</strong>, a 6th-semester Information Systems student at Universitas Nusa Mandiri with a strong foundation in system development, business analysis, and audit information system.
+                I'm <strong className="text-black font-semibold">Rizky Dwi Isniyanto</strong>, a 6th-semester Information Systems student at Universitas Nusa Mandiri with a strong foundation in system development, business analysis, and data analysis.
               </p>
               <p>
                 Backed by over 3 years of professional working experience, I combine analytical thinking, technical skills, and practical problem-solving to design effective digital solutions and streamline organizational processes.

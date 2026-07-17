@@ -1,12 +1,12 @@
 import { memo } from 'react';
 
 const skills = [
-  'System Analysis (UML)',
-  'Data Analysis', //[cite: 1]
+  'Business Analyst',
+  'Data Analyst', //[cite: 1]
   'Audit Sistem Informasi', //[cite: 1]
   'Web Development', //[cite: 1]
-  'Mobile Development (Flutter)', //[cite: 1]
-  'Database Management (MySQL)', //[cite: 1]
+  'Mobile Development', //[cite: 1]
+  'Database Management', //[cite: 1]
   'Business Process & CRM Analysis', //[cite: 1]
   'Data Administration & Processing', //[cite: 1]
 ];
