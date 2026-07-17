@@ -311,7 +311,7 @@ const ProfessionalExperience = () => {
               <div className="absolute bottom-0 right-[15%] w-[38%] md:w-[32%] rotate-[-4deg] group hover:z-[60] transition-all duration-500 hover:-translate-y-2 cursor-pointer">
                 <div className="bg-[#FAF9F6] p-2 pb-7 md:p-2.5 md:pb-9 rounded-[2px] shadow-[0_8px_20px_rgba(0,0,0,0.08)] border border-black/5 group-hover:shadow-[0_16px_32px_rgba(0,0,0,0.15)] transition-shadow duration-500">
                   <div className="aspect-[1/1] overflow-hidden bg-black/5 rounded-[1px]">
-                    <img src="/sb7.jpeg" alt="Starbucks BTS 7" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
+                    <img src="/cp3.png" alt="Starbucks BTS 7" className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy" />
                   </div>
                 </div>
               </div>
