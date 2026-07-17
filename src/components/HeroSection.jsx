@@ -273,7 +273,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           className="flex flex-col items-center gap-2 mt-0 relative z-20"
         >
           <h2 className="text-[clamp(1.35rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-2">
-            INFORMATION<span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">SYSTEMS</span> STUDENT<span className="text-lime-500 font-extrabold -ml-1">.</span>
+            STUDENT OF<span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">INFORMATION SYSTEM</span> <span className="text-lime-500 font-extrabold -ml-1">.</span>
           </h2>
           <p className="font-sans text-base text-black/60 max-w-xl leading-7 mt-2 px-4">
           System Analyst & Full-Stack Application Developer focused on system development, business analysis, and data administration.
