@@ -246,7 +246,7 @@ const AboutSection = memo(function AboutSection() {
               {/* Main title */}
               <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black">
                 <span className="block text-[44px] sm:text-[56px] lg:text-[64px] xl:text-[72px]">
-                  Information Systems Student
+                  Student of System Information
                 </span>
 
                 <span className="block text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[34px] font-medium tracking-[-0.01em] text-black/55 mt-2">
