@@ -220,17 +220,16 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           <LocationTimeBadge />
         </Gsap.div>
 
-        {/* 2. Massive Clear Typography */}
-        <div className="flex flex-col items-center justify-center relative w-full mb-4 md:mb-5">
+  {/* 2. Massive Clear Typography */}
+  <div className="flex flex-col items-center justify-center relative w-full mb-4 md:mb-5">
           
-          {/* FOTO RIZKY (Absolute, di belakang teks dengan z-0) */}
+          {/* FOTO RIZKY (Absolute, ukuran diperkecil & diturunkan sejajar slogan) */}
           <Gsap.div
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute left-0 sm:left-[10%] lg:left-[15%] bottom-[-10%] sm:bottom-[-20%] w-[160px] sm:w-[220px] md:w-[280px] z-0 pointer-events-none"
-          >
-            {/* Pastikan nama filenya sesuai dengan yang ada di folder public kamu */}
+            className="absolute left-[2%] sm:left-[12%] lg:left-[22%] -bottom-[60px] sm:-bottom-[85px] w-[130px] sm:w-[150px] md:w-[185px] z-0 pointer-events-none"
+          >{/* Pastikan nama filenya sesuai dengan yang ada di folder public kamu */}
             <img 
               src="/rizky.png" 
               alt="Rizky Dwi Isniyanto" 
